@@ -25,19 +25,20 @@ html,body
 
 #sideheader{
     width: 30%;
-    height: 100%;
     display: flex;
+    flex-shrink: 0;
+    background-image: url(./background.jpeg);
+    background-size: cover;
+    padding-top: 10%;
 }
 
 #headerBG{
-    background: rgba(19, 20, 19, 0.5);
-    position: absolute;
-    z-index: 100;
-    top: 25%;
-    width: inherit;
+    background: rgba(19, 20, 19, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 25%;
+    width: 100%;
     
 }
 
@@ -46,11 +47,6 @@ html,body
     font-size: 4rem;
 }
 
-#backgroundIMG{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
 
 /* controls the style for right side of the form*/
 
