@@ -17,14 +17,47 @@
             <img id="backgroundIMG" src="./background.jpeg">
         </div>
         <div id="main">
-            <div class="intro">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize
+            <div id="intro">
+                <p id="introText">This is not a real online service! You know you need something like this in your life to help you realize
                     your deepest dreams.Sign up now to get started
                 </p>
                 <p>You know you want to!</p>
             </div>
-            <div class="form"></div>
-            <div class="confirmation"></div>
+            <div class="form">
+                <form id="myForm" method="post" action="#">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <div class="inputs">
+                            <label class="labels" for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="inputs">
+                            <label class="labels" for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                        <div class="inputs">
+                            <label class="labels" for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="inputs">
+                            <label class="labels" for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="inputs">
+                            <label class="labels" for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="inputs">
+                            <label class="labels" for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="submit">
+                <button id="submitBtn" type="submit" form="myForm">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
     

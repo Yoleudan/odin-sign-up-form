@@ -6,11 +6,22 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-
+:root{
+    --main-bg-color:rgb(245, 245, 245);
+    --primary-font-size:1.5rem;
+    --header-font-size:2rem;
+    --main-font:Arial, Helvetica, sans-serif;
+}
 
 #container{
     display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-bg-color);
 }
+
+/*the style for the left side of the sign up form*/
+
 
 #sideheader{
     width: 30%;
@@ -19,7 +30,6 @@ html,body
 }
 
 #headerBG{
-    color: white;
     background: rgba(19, 20, 19, 0.5);
     position: absolute;
     z-index: 100;
@@ -32,7 +42,6 @@ html,body
 }
 
 .title{
-    opacity: 100%;
     color: white;
     font-size: 4rem;
 }
@@ -41,4 +50,68 @@ html,body
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+/* controls the style for right side of the form*/
+
+#main{
+    width: 70%;
+}
+
+#intro{
+    background-color: var(--main-bg-color);
+    padding: 50px;
+    width: 100%;
+    font-size: var(--header-font-size);
+    font-weight: bold;
+    font-family: var(--main-font)
+}
+
+#introText{
+    max-width: 70ch;
+}
+
+.form{
+    padding: 50px;
+    background-color: white;
+}
+
+fieldset{
+    border:0;
+    color: rgb(55, 96, 112);
+    font-family: var(--main-font);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+legend{
+    font-size: var(--header-font-size);
+}
+
+input{
+    width: 30ch;
+    font-size: var(--primary-font-size);
+    max-height: var(var(--primary-font-size)) ;
+}
+
+.labels{
+    font-weight: bold;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.submit{
+    padding: 50px;
+    font-family: var(--main-font);
+    
+}
+
+#submitBtn{
+    padding: 10px;
+    width: fit-content;
+    font-size: var(--header-font-size);
 }
