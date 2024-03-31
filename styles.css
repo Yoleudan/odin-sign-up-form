@@ -1,0 +1,44 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+#container{
+    display: flex;
+}
+
+#sideheader{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+#headerBG{
+    color: white;
+    background: rgba(19, 20, 19, 0.5);
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+    opacity: 100%;
+    color: white;
+    font-size: 4rem;
+}
+
+#backgroundIMG{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
