@@ -9,6 +9,7 @@ function confirmPassword(){
         const submitBtn = document.getElementById('submitBtn').disabled = true
         document.getElementById('confirmPassword').setCustomValidity("Invalid field.");
         error.textContent="Passwords do not match!"
+        error.style.color= "red"
         pw1.style.border = "2px solid red"
         pwconfirm1.style.border = "2px solid red"
         console.log("button disabled")
