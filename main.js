@@ -21,6 +21,11 @@ pwconfirm.addEventListener('focusout', function(){
     confirmPassword();
 })
 
+const pw = document.getElementById('password')
+pw.addEventListener('focusout', function(){
+    confirmPassword();
+})
+
 pwconfirm.addEventListener('focusin', function(){
     document.getElementById('submitBtn').disabled = false
     document.getElementById('confirmPassword').setCustomValidity("")
