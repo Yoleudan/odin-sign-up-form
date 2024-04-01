@@ -6,7 +6,7 @@ function confirmPassword(){
     if (pw !== pwconfirm || pw === "" || pwconfirm === ""){
         const submitBtn = document.getElementById('submitBtn').disabled = true
         document.getElementById('confirmPassword').setCustomValidity("Invalid field.");
-        error.textContent="Please make sure passwords match!"
+        error.textContent="Passwords do not match!"
         console.log("button disabled")
     }
     else{
@@ -27,6 +27,11 @@ pw.addEventListener('focusout', function(){
 })
 
 pwconfirm.addEventListener('focusin', function(){
+    document.getElementById('submitBtn').disabled = false
+    document.getElementById('confirmPassword').setCustomValidity("")
+
+})
+pw.addEventListener('focusin', function(){
     document.getElementById('submitBtn').disabled = false
     document.getElementById('confirmPassword').setCustomValidity("")
 
