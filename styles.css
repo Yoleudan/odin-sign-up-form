@@ -105,10 +105,6 @@ input{
 }
 
 
-input:invalid{
-    outline: none;
-    border: 2px solid red;
-}
 
 input:valid{
     outline: none;
@@ -122,6 +118,10 @@ input:focus{
 
 input:focus:invalid{
     outline: none;
+    border: 2px solid red;
+}
+
+.outOfFocus:invalid{
     border: 2px solid red;
 }
 
@@ -161,6 +161,11 @@ input:focus:invalid{
 #submitBtn:not(:disabled):hover{
     background-color: white;
     color: black;
+}
+
+#error{
+    color: red;
+    margin: 0;
 }
 
 @media (max-width: 1200px) {
