@@ -64,7 +64,9 @@ html,body
 #intro{
     background-color: var(--main-bg-color);
     padding-top: 100px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     min-height: fit-content;
     font-size: var(--header-font-size);
     font-weight: bold;
@@ -99,7 +101,18 @@ input{
     max-height: var(var(--primary-font-size));
     border-color: #E5E7EB;
     display: flex;
-    flex-shrink: 1;
+    flex-shrink: 2;
+}
+
+
+input:invalid{
+    outline: none;
+    border: 2px solid red;
+}
+
+input:valid{
+    outline: none;
+    border: 2px solid green
 }
 
 input:focus{
@@ -107,7 +120,8 @@ input:focus{
     border: 2px solid blue;
 }
 
-input:invalid{
+input:focus:invalid{
+    outline: none;
     border: 2px solid red;
 }
 
@@ -139,7 +153,20 @@ input:invalid{
     color: white;
 }
 
-#submitBtn:hover{
+#submitBtn:disabled{
+    color: grey;
+    background-color: lightgray;
+}
+
+#submitBtn:not(:disabled):hover{
     background-color: white;
     color: black;
+}
+
+@media (max-width: 1200px) {
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
